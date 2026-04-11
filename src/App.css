@@ -1,0 +1,66 @@
+.page {
+  min-height: 100vh;
+}
+
+/* 上部バー */
+.topbar {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo-main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.logo-sub {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.2em;
+}
+
+/* ヒーロー */
+.hero {
+  min-height: calc(100vh - 88px);
+  background: #000;
+}
+
+.hero-overlay {
+  min-height: calc(100vh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-inner {
+  text-align: center;
+}
+
+.mini {
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.12em;
+  margin: 10px 0;
+}
+
+.desc {
+  color: rgba(255, 255, 255, 0.85);
+}

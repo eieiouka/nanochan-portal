@@ -1,0 +1,24 @@
+.section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.section.alt {
+  background: #f7f7fb;
+}
+
+.section-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+}
+
+.section p {
+  margin: 0;
+  color: #555;
+  line-height: 1.8;
+}
