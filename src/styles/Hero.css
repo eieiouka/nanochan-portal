@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -25,10 +25,23 @@
 
 /* タイトル */
 .hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  letter-spacing: 0.12em;
-  color: white;
+  font-size: clamp(3.5rem, 7.4vw, 5.8rem); /* ★一段アップ */
+  letter-spacing: 0.14em;
+  margin: 0;
 
-  /* ★追加（これが効く） */
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+
+  color: #fff;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.85);
+
+  text-shadow:
+    0 2px 4px rgba(0,0,0,0.6),
+    0 6px 18px rgba(0,0,0,0.85);
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem; /* ★少し大きく */
+    letter-spacing: 0.1em;
+  }
 }
