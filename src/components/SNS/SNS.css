@@ -1,0 +1,54 @@
+.sns-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.sns-card {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #111;
+
+  background: #f7f7f7;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease;
+}
+
+.sns-card:hover {
+  transform: translateY(-4px);
+}
+
+.sns-image {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.sns-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sns-card:hover .sns-image img {
+  transform: scale(1.05);
+}
+
+.sns-card h3 {
+  margin: 14px 16px 6px;
+}
+
+.sns-card p {
+  margin: 0 16px 16px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .sns-cards {
+    grid-template-columns: 1fr;
+  }
+}
