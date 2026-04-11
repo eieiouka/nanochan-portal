@@ -1,9 +1,19 @@
-import Hero from "./components/Hero";
+import Hero from "./components/Hero/Hero";
 
 export default function App() {
   return (
-    <div className="page">
+    <>
       <Hero />
-    </div>
+
+      <section id="about" style={{ padding: "80px 20px" }}>
+        <h2>About</h2>
+        <p>ここにナノカちゃんの紹介を書く</p>
+      </section>
+
+      <section id="gallery" style={{ padding: "80px 20px" }}>
+        <h2>Gallery</h2>
+        <p>ここに画像を並べる</p>
+      </section>
+    </>
   );
 }
