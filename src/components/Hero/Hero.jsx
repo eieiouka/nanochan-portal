@@ -11,12 +11,12 @@ export default function Hero() {
 
       <div className="hero-overlay">
         <div className="hero-content">
-          <p className="hero-kicker">NANOCHAN PORTAL</p>
+          <p className="hero-kicker">nanochan PORTAL</p>
 
           <h1>ナノちゃんポータル</h1>
 
           <p className="hero-text">
-            計画性のないナノカちゃんを中心に、
+            「計画性のないナノカちゃん」が作った、
             イラストや情報をまとめたファンサイト
           </p>
 
