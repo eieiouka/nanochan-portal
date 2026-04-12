@@ -4,10 +4,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="section gallery">
       <p className="section-label">Gallery</p>
-      <h2>ギャラリー</h2>
-      <p className="gallery-lead">
-        ナノちゃんのイラストやビジュアルをまとめた一覧です。
-      </p>
+      <h2>私の可愛い写真集</h2>
 
       <div className="gallery-grid">
         <div className="gallery-item">

@@ -48,3 +48,14 @@
     height: 220px;
   }
 }
+
+.gallery-label {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: #888;
+}
+
+.gallery {
+  color: #fff;
+}

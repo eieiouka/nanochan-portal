@@ -12,7 +12,7 @@ export default function About() {
     <section id="about" className="section about">
       <p className="section-label">About</p>
 
-      <h2>ナノちゃんのココが凄い！（ネタバレ注意）</h2>
+      <h2>ナノちゃんのココが凄い！（これより、ネタバレ注意）</h2>
 
       <p className="about-lead">
         本名は黒部ナノカ。<br />
