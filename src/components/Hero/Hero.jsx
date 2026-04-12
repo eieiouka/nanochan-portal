@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#about" className="hero-button primary">
+            <a href="#sns" className="hero-button primary">
               詳しく見る
             </a>
 

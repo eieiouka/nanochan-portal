@@ -1,7 +1,6 @@
 .about-lead {
   max-width: 720px;
   line-height: 1.9;
-  font-size: 1.05rem;
   margin-bottom: 36px;
 }
 
@@ -27,20 +26,82 @@
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;
 }
 
-.about-card h3 {
-  margin: 16px 16px 8px;
+.about-content {
+  padding: 18px 18px 20px;
 }
 
-.about-card p {
-  margin: 0 16px 20px;
+.about-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.about-content p {
+  margin: 0;
   line-height: 1.8;
   color: #444;
+  font-size: 0.98rem;
 }
 
 @media (max-width: 768px) {
   .about-cards {
     grid-template-columns: 1fr;
   }
+}
+
+.about-content h3 {
+  color: #000;
+}
+
+.about-content p {
+  color: #000;
+}
+
+.age-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.age-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.age-balloon {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 12px);
+  transform: translateY(-50%);
+  z-index: 10;
+
+  white-space: nowrap;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.age-balloon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }

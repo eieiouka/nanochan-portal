@@ -7,6 +7,7 @@ export default function Header() {
         <div className="logo">ナノちゃんポータル</div>
 
         <nav className="nav">
+          <a href="#sns">SNS</a>
           <a href="#about">About</a>
           <a href="#gallery">Gallery</a>
         </nav>

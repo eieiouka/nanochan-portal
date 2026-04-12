@@ -2,9 +2,9 @@ import "./SNS.css";
 
 export default function SNS() {
   return (
-    <section className="section sns">
+    <section id="sns" className="section sns">
       <p className="section-label">SNS</p>
-      <h2>リンク</h2>
+      <h2>フォローしなさい（リンク付き）</h2>
 
       <div className="sns-cards">
         <a
@@ -16,8 +16,8 @@ export default function SNS() {
           <div className="sns-image">
             <img src="/images/twitter.jpg" alt="Twitter" />
           </div>
-          <h3>Twitter</h3>
-          <p>悪口を言った当然の報い</p>
+          <h3>Twitter ← Xとは呼ばせない</h3>
+          <p>氷属性持ちのツイ廃ナノちゃん</p>
         </a>
 
         <a
