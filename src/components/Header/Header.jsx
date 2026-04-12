@@ -6,12 +6,13 @@ export default function Header() {
       <div className="header-inner">
         <div className="logo">ナノちゃんポータル</div>
 
-        <nav className="nav">
-          <a href="#sns">SNS</a>
-          <a href="#about">About</a>
-          <a href="#link">Link</a> {/* ←追加 */}
-          <a href="#gallery">Gallery</a>
-        </nav>
+          <nav className="nav">
+            <a href="#sns">SNS</a>
+            <a href="#about">About</a>
+            <a href="#link">Link</a>
+            <a href="#minigame">Mini Game</a> {/* ←追加 */}
+            <a href="#gallery">Gallery</a>
+          </nav>
       </div>
     </header>
   );
