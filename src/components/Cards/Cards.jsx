@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Cards.css";
 
-const ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+const ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K"];
 
 export default function Cards() {
   const [activeRank, setActiveRank] = useState("A");
@@ -20,16 +20,20 @@ export default function Cards() {
       </div>
 
       <div className="cards-tabs">
-        {ranks.map((rank) => (
-          <button
-            key={rank}
-            type="button"
-            className={`cards-tab ${activeRank === rank ? "active" : ""}`}
-            onClick={() => setActiveRank(rank)}
-          >
-            {rank}
-          </button>
-        ))}
+        {ranks.map((rank) => {
+          const label = rank === "T" ? "10" : rank;
+
+          return (
+            <button
+              key={rank}
+              type="button"
+              className={`cards-tab ${activeRank === rank ? "active" : ""}`}
+              onClick={() => setActiveRank(rank)}
+            >
+              {label}
+            </button>
+          );
+        })}
       </div>
 
       <div className="cards-grid">
