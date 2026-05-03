@@ -15,7 +15,7 @@ export default function SubSNS() {
 
         <a
           className="subsns-link"
-          href="https://x.com/ここにサブ垢ID"
+          href="https://x.com/nanochan_665"
           target="_blank"
           rel="noreferrer"
         >

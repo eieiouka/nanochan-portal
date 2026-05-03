@@ -8,6 +8,7 @@ export default function Header() {
 
           <nav className="nav">
             <a href="#sns">SNS</a>
+            <a href="#subsns" className="nav-subsns">SubSNS</a>
             <a href="#about">About</a>
             <a href="#link">Link</a>
             <a href="#game">Game</a> {/* ←追加 */}

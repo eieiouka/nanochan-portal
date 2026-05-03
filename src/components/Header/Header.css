@@ -35,3 +35,8 @@
 .nav a:hover {
   opacity: 0.7;
 }
+
+.nav-subsns {
+  color: #ff5c7a;
+  font-weight: 700;
+}
