@@ -2,26 +2,27 @@ import { useRef, useEffect } from "react";
 import "./Header.css";
 
 export default function Header() {
+  const headerRef = useRef(null);
   const navRef = useRef(null);
 
-  // ▼ タブ高さを自動取得
   useEffect(() => {
-    const setNavHeight = () => {
-      if (!navRef.current) return;
-      const height = navRef.current.offsetHeight;
+    const setHeaderHeight = () => {
+      if (!headerRef.current) return;
+
+      const height = headerRef.current.offsetHeight;
+
       document.documentElement.style.setProperty(
-        "--nav-height",
+        "--header-height",
         `${height}px`
       );
     };
 
-    setNavHeight();
-    window.addEventListener("resize", setNavHeight);
+    setHeaderHeight();
+    window.addEventListener("resize", setHeaderHeight);
 
-    return () => window.removeEventListener("resize", setNavHeight);
+    return () => window.removeEventListener("resize", setHeaderHeight);
   }, []);
 
-  // ▼ ドラッグスクロール
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
@@ -43,13 +44,14 @@ export default function Header() {
   const handleMouseMove = (e) => {
     if (!isDown) return;
     e.preventDefault();
+
     const x = e.pageX - navRef.current.offsetLeft;
     const walk = (x - startX) * 1.5;
     navRef.current.scrollLeft = scrollLeft - walk;
   };
 
   return (
-    <header className="topbar">
+    <header className="topbar" ref={headerRef}>
       <div className="logo-area">
         <div className="logo-main">ナノちゃんポータル</div>
         <div className="logo-sub">made by 計画性のないナノカちゃん</div>
