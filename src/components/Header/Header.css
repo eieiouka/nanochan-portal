@@ -12,6 +12,7 @@
   gap: 16px;
 }
 
+/* ロゴ */
 .logo-area {
   display: flex;
   flex-direction: column;
@@ -35,9 +36,11 @@
   white-space: nowrap;
 }
 
+/* ナビ */
 .nav {
   display: flex;
   gap: 18px;
+
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -47,20 +50,14 @@
   padding: 8px 4px 8px 0;
 
   cursor: grab;
-
-  mask-image: linear-gradient(
-    to right,
-    transparent,
-    black 18px,
-    black calc(100% - 18px),
-    transparent
-  );
 }
 
+/* ドラッグ中 */
 .nav:active {
   cursor: grabbing;
 }
 
+/* タブ */
 .nav a {
   flex: 0 0 auto;
   white-space: nowrap;
@@ -79,11 +76,13 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* SubSNS強調 */
 .nav-subsns {
-  color: #ff5c7a !important;
+  color: #ff5c7a;
   font-weight: 700;
 }
 
+/* スクロールバー */
 .nav::-webkit-scrollbar {
   height: 6px;
 }
@@ -98,15 +97,11 @@
   border-radius: 999px;
 }
 
+/* スマホ */
 @media (max-width: 768px) {
   .topbar {
     height: auto;
     padding: 10px 12px;
-    gap: 12px;
-  }
-
-  .logo-area {
-    min-width: 130px;
   }
 
   .logo-main {
@@ -119,7 +114,6 @@
 
   .nav {
     gap: 14px;
-    padding: 8px 4px;
   }
 
   .nav a {

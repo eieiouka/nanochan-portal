@@ -1,28 +1,30 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import "./Header.css";
 
 export default function Header() {
-  const headerRef = useRef(null);
   const navRef = useRef(null);
 
-  useEffect(() => {
-    const setHeaderHeight = () => {
-      if (!headerRef.current) return;
+  // ▼ スクロール制御（ピタ止め）
+  const scrollToSection = (id) => {
+    const target = document.querySelector(id);
+    const header = document.querySelector(".topbar");
 
-      const height = headerRef.current.offsetHeight;
+    if (!target || !header) return;
 
-      document.documentElement.style.setProperty(
-        "--header-height",
-        `${height}px`
-      );
-    };
+    const headerHeight = header.offsetHeight;
 
-    setHeaderHeight();
-    window.addEventListener("resize", setHeaderHeight);
+    const targetTop =
+      target.getBoundingClientRect().top +
+      window.scrollY -
+      headerHeight;
 
-    return () => window.removeEventListener("resize", setHeaderHeight);
-  }, []);
+    window.scrollTo({
+      top: targetTop,
+      behavior: "smooth",
+    });
+  };
 
+  // ▼ ドラッグスクロール
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
@@ -33,13 +35,8 @@ export default function Header() {
     scrollLeft = navRef.current.scrollLeft;
   };
 
-  const handleMouseLeave = () => {
-    isDown = false;
-  };
-
-  const handleMouseUp = () => {
-    isDown = false;
-  };
+  const handleMouseLeave = () => (isDown = false);
+  const handleMouseUp = () => (isDown = false);
 
   const handleMouseMove = (e) => {
     if (!isDown) return;
@@ -51,7 +48,7 @@ export default function Header() {
   };
 
   return (
-    <header className="topbar" ref={headerRef}>
+    <header className="topbar">
       <div className="logo-area">
         <div className="logo-main">ナノちゃんポータル</div>
         <div className="logo-sub">made by 計画性のないナノカちゃん</div>
@@ -65,13 +62,13 @@ export default function Header() {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
-        <a href="#sns">SNS</a>
-        <a href="#subsns" className="nav-subsns">SubSNS</a>
-        <a href="#about">ABOUT</a>
-        <a href="#links">LINKS</a>
-        <a href="#game">GAME</a>
-        <a href="#gallery">GALLERY</a>
-        <a href="#cards">CARDS</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#sns"); }}>SNS</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#subsns"); }} className="nav-subsns">SubSNS</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#about"); }}>ABOUT</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#links"); }}>LINKS</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#game"); }}>GAME</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#gallery"); }}>GALLERY</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#cards"); }}>CARDS</a>
       </nav>
     </header>
   );
