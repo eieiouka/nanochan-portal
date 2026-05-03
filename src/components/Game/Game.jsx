@@ -7,6 +7,7 @@ export default function Game() {
       <h2>私が作った神ゲーの集まり</h2>
 
       <div className="game-cards">
+        {/* 1個目 */}
         <a
           href="https://ema-shooting.vercel.app/"
           target="_blank"
@@ -23,21 +24,31 @@ export default function Game() {
           </div>
         </a>
 
-        <div className="game-card">
-          <img src="/images/game2.jpg" alt="ナノちゃんミニゲーム2（開発中）" />
+        {/* 2個目（リンク化） */}
+        <a
+          href="https://ema-oshioki.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="game-card"
+        >
+          <img src="/images/game2.jpg" alt="ナノちゃんミニゲーム2" />
 
           <div className="game-content">
             <h3>ナノちゃんミニゲーム2</h3>
-            <p>徐々に迫ってくるプレス機で桜羽エマが圧殺されないうちに、漢字の読み方を10個答えるゲームよ。</p>
+            <p>
+              徐々に迫ってくるプレス機で桜羽エマが圧殺されないうちに、
+              漢字の読み方を10個答えるゲームよ。
+            </p>
           </div>
-        </div>
+        </a>
 
+        {/* 3個目（開発中） */}
         <div className="game-card coming-soon">
           <img src="/images/game3.jpg" alt="ナノちゃんミニゲーム3（開発中）" />
 
           <div className="game-content">
             <h3>ナノちゃんミニゲーム3</h3>
-            <p>さらに面白いゲームを準備中よ。</p>
+            <p>面白いゲームを準備中よ。</p>
             <span className="coming-label">Coming Soon</span>
           </div>
         </div>
