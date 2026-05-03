@@ -34,7 +34,7 @@ export default function Game() {
           <img src="/images/game2.jpg" alt="ナノちゃんミニゲーム2" />
 
           <div className="game-content">
-            <h3>ナノちゃんミニゲーム2</h3>
+            <h3>漢字力でエマちゃんを救おう！</h3>
             <p>
               徐々に迫ってくるプレス機で桜羽エマが圧殺されないうちに、
               漢字の読み方を10個答えるゲームよ。
