@@ -15,7 +15,7 @@ export default function Cards() {
   return (
     <section id="cards" className="cards-section">
       <div className="section-title-wrap">
-        <p className="section-mini">CARDS</p>
+        <p className="section-label">Cards</p>
         <h2 className="section-title">まのさばトランプ</h2>
       </div>
 
