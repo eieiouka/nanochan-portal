@@ -23,13 +23,12 @@ export default function Game() {
           </div>
         </a>
 
-        <div className="game-card coming-soon">
+        <div className="game-card">
           <img src="/images/game2.jpg" alt="ナノちゃんミニゲーム2（開発中）" />
 
           <div className="game-content">
             <h3>ナノちゃんミニゲーム2</h3>
-            <p>現在開発中よ。楽しみにしてなさい。</p>
-            <span className="coming-label">Coming Soon</span>
+            <p>徐々に迫ってくるプレス機で桜羽エマが圧殺されないうちに、漢字の読み方を10個答えるゲームよ。</p>
           </div>
         </div>
 
