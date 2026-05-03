@@ -1,5 +1,4 @@
 .cards-section {
-  padding: 72px 24px;
   background: #0f0f10; /* 少し柔らかい黒 */
 }
 
@@ -12,9 +11,9 @@
 .cards-tabs {
   display: flex;
   gap: 8px;
-  justify-content: flex-start; /* ← ここ変更 */
+  justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 28px 0 32px; /* ← 中央寄せやめた */
+  margin: 28px 0 32px;
 }
 
 .cards-tab {
@@ -40,7 +39,7 @@
 /* ▼ カード（左揃えグリッド） */
 .cards-grid {
   max-width: 980px;
-  margin: 0; /* ← auto削除で左寄せ */
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(120px, 1fr));
   gap: 22px;
@@ -49,7 +48,7 @@
 
 .card-item {
   display: flex;
-  justify-content: flex-start; /* ← 左寄せ */
+  justify-content: flex-start;
   align-items: center;
   background: transparent;
 }
@@ -64,10 +63,6 @@
 
 /* ▼ スマホ */
 @media (max-width: 700px) {
-  .cards-section {
-    padding: 56px 16px;
-  }
-
   .cards-grid {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
     gap: 18px;
