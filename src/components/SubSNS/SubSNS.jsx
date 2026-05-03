@@ -2,24 +2,22 @@ import "./SubSNS.css";
 
 export default function SubSNS() {
   return (
-    <section id="subsns" className="subsns-section">
-      <div className="section-title-wrap">
-        <p className="section-mini">SUB SNS</p>
-        <h2 className="section-title">SubSNS</h2>
-      </div>
+    <section id="subsns" className="section subsns">
+      <p className="section-label">SubSNS</p>
+      <h2>緊急用サブ垢</h2>
 
-      <div className="subsns-card">
-        <p className="subsns-text">
-          メインアカウントに問題があった場合はこちらで更新します。
-        </p>
-
+      <div className="sns-cards">
         <a
-          className="subsns-link"
           href="https://x.com/nanochan_665"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
+          className="sns-card"
         >
-          サブ垢を見る
+          <div className="sns-image">
+            <img src="/images/twitter2.jpg" alt="Sub Twitter" />
+          </div>
+          <h3>Sub Twitter</h3>
+          <p>凍結・緊急時はこちら</p>
         </a>
       </div>
     </section>

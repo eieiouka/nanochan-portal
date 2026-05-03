@@ -1,38 +1,23 @@
-.subsns-section {
-  padding: 72px 20px;
-  background: #fff7f7;
-}
+/* SNSと同じ構造を使う */
+@import "../SNS/SNS.css";
 
-.subsns-card {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 28px 24px;
-  border-radius: 24px;
-  background: white;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
-.subsns-text {
-  margin: 0 0 22px;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #444;
-}
-
-.subsns-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 22px;
-  border-radius: 999px;
-  background: #ff5c7a;
+/* ▼ 背景だけ黒に変更 */
+.subsns {
+  background: black;
   color: white;
-  font-weight: 800;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(255, 92, 122, 0.25);
 }
 
-.subsns-link:hover {
-  transform: translateY(-2px);
+/* 左上ラベル（SNSと同じ位置） */
+.section-label {
+  color: #aaa;
+}
+
+/* カードの文字色調整（黒背景対策） */
+.subsns .sns-card {
+  background: #111;
+  color: white;
+}
+
+.subsns .sns-card p {
+  color: #ccc;
 }
