@@ -64,11 +64,11 @@ export default function Header() {
       >
         <a onClick={(e) => { e.preventDefault(); scrollToSection("#sns"); }}>SNS</a>
         <a onClick={(e) => { e.preventDefault(); scrollToSection("#subsns"); }} className="nav-subsns">SubSNS</a>
-        <a onClick={(e) => { e.preventDefault(); scrollToSection("#about"); }}>ABOUT</a>
-        <a onClick={(e) => { e.preventDefault(); scrollToSection("#links"); }}>LINKS</a>
-        <a onClick={(e) => { e.preventDefault(); scrollToSection("#game"); }}>GAME</a>
-        <a onClick={(e) => { e.preventDefault(); scrollToSection("#gallery"); }}>GALLERY</a>
-        <a onClick={(e) => { e.preventDefault(); scrollToSection("#cards"); }}>CARDS</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#about"); }}>About</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#links"); }}>Links</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#game"); }}>Game</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#gallery"); }}>Gallery</a>
+        <a onClick={(e) => { e.preventDefault(); scrollToSection("#cards"); }}>Cards</a>
       </nav>
     </header>
   );

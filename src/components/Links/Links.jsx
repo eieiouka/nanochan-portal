@@ -3,7 +3,7 @@ import "./Links.css";
 export default function Links() {
   return (
     <section id="links" className="section links">
-      <p className="section-label">Link</p>
+      <p className="section-label">Links</p>
       <h2>私が作った別ページ</h2>
 
       <div className="links-cards">
