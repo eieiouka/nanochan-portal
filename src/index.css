@@ -16,3 +16,15 @@ body {
 .page {
   min-height: 100vh;
 }
+
+:root {
+  --nav-height: 60px; /* タブの高さに合わせる */
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+}
+
+.section {
+  scroll-margin-top: var(--nav-height);
+}

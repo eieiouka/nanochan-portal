@@ -1,9 +1,27 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import "./Header.css";
 
 export default function Header() {
   const navRef = useRef(null);
 
+  // ▼ タブ高さを自動取得
+  useEffect(() => {
+    const setNavHeight = () => {
+      if (!navRef.current) return;
+      const height = navRef.current.offsetHeight;
+      document.documentElement.style.setProperty(
+        "--nav-height",
+        `${height}px`
+      );
+    };
+
+    setNavHeight();
+    window.addEventListener("resize", setNavHeight);
+
+    return () => window.removeEventListener("resize", setNavHeight);
+  }, []);
+
+  // ▼ ドラッグスクロール
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
