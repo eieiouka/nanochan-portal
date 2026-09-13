@@ -1,0 +1,29 @@
+@import "../SNS/SNS.css";
+
+.booth {
+  background: #fff;
+  color: #111;
+}
+
+.booth-card-disabled {
+  cursor: default;
+  opacity: 0.58;
+}
+
+.booth-card-disabled:hover {
+  transform: none;
+}
+
+.booth-card-disabled:hover .sns-image img {
+  transform: none;
+}
+
+.booth-coming-soon-image {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #252525, #666);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}

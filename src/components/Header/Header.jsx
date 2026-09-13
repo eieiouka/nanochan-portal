@@ -86,6 +86,15 @@ export default function Header() {
         <a
           onClick={(e) => {
             e.preventDefault();
+            scrollToSection("#booth");
+          }}
+        >
+          BOOTH
+        </a>
+
+        <a
+          onClick={(e) => {
+            e.preventDefault();
             scrollToSection("#about");
           }}
         >

@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import SNS from "./components/SNS/SNS";
 import SubSNS from "./components/SubSNS/SubSNS";
+import Booth from "./components/Booth/Booth";
 import About from "./components/About/About";
 import Links from "./components/Links/Links";
 import Game from "./components/Game/Game";
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <SNS />
         <SubSNS />
+        <Booth />
         <About />
         <Links />
 
