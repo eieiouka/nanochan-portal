@@ -12,7 +12,7 @@ export default function Booth() {
             <img src="/images/booth-playing-cards.jpg" alt="まのさばトランプ" />
           </div>
           <h3>まのさばトランプ（販売停止中）</h3>
-          <p>現在は販売を停止しています</p>
+          <p>販売停止中よ。作り直すかも知れないわ。</p>
         </div>
 
         <a
@@ -25,7 +25,7 @@ export default function Booth() {
             <img src="/images/booth-magic-shogi.jpg" alt="魔法少女ノ魔法将棋" />
           </div>
           <h3>魔法少女ノ魔法将棋</h3>
-          <p>Boothで販売中</p>
+          <p>魔法が使える将棋ゲームよ。AI解析にかけているけど、まだ必勝法が分かってないぐらい奥が深いわ。</p>
         </a>
 
         <div className="booth-card booth-card-disabled" aria-disabled="true">
