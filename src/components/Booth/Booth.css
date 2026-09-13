@@ -1,36 +1,55 @@
-@import "../SNS/SNS.css";
-
 .booth {
   background: #fff;
   color: #111;
-  padding: 80px 20px;
-}
-
-.booth-inner {
-  width: min(1200px, 100%);
-  margin: 0 auto;
 }
 
 .booth-cards {
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
 
-.booth-cards .sns-card {
+.booth-card {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #111;
+
+  background: #f7f7f7;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease;
+}
+
+.booth-card:hover {
+  transform: translateY(-4px);
+}
+
+.booth-image {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.booth-image img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.booth-cards .sns-image {
-  height: auto;
-  aspect-ratio: 1 / 1;
+.booth-card:hover .booth-image img {
+  transform: scale(1.05);
 }
 
-.booth-cards .sns-image img {
-  object-fit: contain;
-  background: #eee;
+.booth-card h3 {
+  margin: 14px 16px 6px;
 }
 
-.booth-cards .sns-card h3 {
-  margin-bottom: 16px;
+.booth-card p {
+  margin: 0 16px 16px;
+  color: #444;
 }
 
 .booth-card-disabled {
@@ -41,7 +60,7 @@
   transform: none;
 }
 
-.booth-card-disabled:hover .sns-image img {
+.booth-card-disabled:hover .booth-image img {
   transform: none;
 }
 
@@ -53,4 +72,10 @@
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+
+@media (max-width: 768px) {
+  .booth-cards {
+    grid-template-columns: 1fr;
+  }
 }

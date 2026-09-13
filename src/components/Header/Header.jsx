@@ -89,7 +89,7 @@ export default function Header() {
             scrollToSection("#booth");
           }}
         >
-          BOOTH
+          Booth
         </a>
 
         <a
