@@ -3,11 +3,38 @@
 .booth {
   background: #fff;
   color: #111;
+  padding: 80px 20px;
+}
+
+.booth-inner {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.booth-cards {
+  align-items: stretch;
+}
+
+.booth-cards .sns-card {
+  height: 100%;
+}
+
+.booth-cards .sns-image {
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.booth-cards .sns-image img {
+  object-fit: contain;
+  background: #eee;
+}
+
+.booth-cards .sns-card h3 {
+  margin-bottom: 16px;
 }
 
 .booth-card-disabled {
   cursor: default;
-  opacity: 0.58;
 }
 
 .booth-card-disabled:hover {
