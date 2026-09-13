@@ -36,7 +36,7 @@ export default function Booth() {
             <span>Coming soon</span>
           </div>
           <h3>Coming soon</h3>
-          <p>次の商品を準備中</p>
+          <p>次の商品を準備中よ。楽しみに待っててちょうだい。</p>
         </div>
       </div>
     </section>
