@@ -15,7 +15,7 @@ export default function Booth() {
         </div>
 
         <a
-          href="https://noplananoka.booth.pm/"
+          href="https://noplannanoka.booth.pm/items/8824608"
           target="_blank"
           rel="noopener noreferrer"
           className="sns-card"
