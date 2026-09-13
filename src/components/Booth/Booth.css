@@ -60,6 +60,10 @@
   cursor: default;
 }
 
+.booth-card-stopped {
+  opacity: 0.55;
+}
+
 .booth-card-disabled:hover {
   transform: none;
 }

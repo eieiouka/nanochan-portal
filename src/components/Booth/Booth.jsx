@@ -7,7 +7,10 @@ export default function Booth() {
       <h2>ナノちゃんのBooth</h2>
 
       <div className="booth-cards">
-        <div className="booth-card booth-card-disabled" aria-disabled="true">
+        <div
+          className="booth-card booth-card-disabled booth-card-stopped"
+          aria-disabled="true"
+        >
           <div className="booth-image">
             <img src="/images/booth-playing-cards.jpg" alt="まのさばトランプ" />
           </div>
