@@ -64,6 +64,16 @@ export default function Header() {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
       >
+
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("#about");
+          }}
+        >
+          About
+        </a>
+        
         <a
           onClick={(e) => {
             e.preventDefault();
@@ -90,15 +100,6 @@ export default function Header() {
           }}
         >
           Booth
-        </a>
-
-        <a
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("#about");
-          }}
-        >
-          About
         </a>
 
         <a

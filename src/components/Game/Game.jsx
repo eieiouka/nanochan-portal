@@ -9,17 +9,17 @@ export default function Game() {
       <div className="game-cards">
         {/* 1個目 */}
         <a
-          href="https://ema-shooting.vercel.app/"
+          href="https://manosaba-shogi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="game-card"
         >
-          <img src="/images/game1.jpg" alt="桜羽エマ 処刑ゲーム" />
+          <img src="/images/game1.jpg" alt="魔法少女ノ魔法将棋" />
 
           <div className="game-content">
-            <h3>桜羽エマ 処刑ゲーム</h3>
+            <h3>魔法少女ノ魔法将棋</h3>
             <p>
-              ランダムに飛ぶ弾を、桜羽エマに当てるゲームよ。命中すると血の色で染まるわ。
+              まのさばキャラで戦う将棋よ。各キャラが魔法を使えるから、それを駆使して戦うわ。
             </p>
           </div>
         </a>
